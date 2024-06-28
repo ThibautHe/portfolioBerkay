@@ -4,6 +4,7 @@ import { useColorTheme } from "./Hooks/useColorTheme.jsx";
 import { NavLink, Outlet } from "react-router-dom";
 import "./CSS/PortfolioPages/portfolio.css";
 import { Footer } from "./Footer.jsx";
+import { motion } from "framer-motion";
 
 export function Portfolio() {
   const { theme, readableColor } = useColorTheme();
@@ -38,10 +39,6 @@ export function Portfolio() {
     const videos = document.querySelectorAll(".video");
 
     videos.forEach((video) => {
-      video.pause();
-    });
-
-    videos.forEach((video) => {
       video.addEventListener("mouseenter", () => {
         video.play();
       });
@@ -71,13 +68,13 @@ export function Portfolio() {
                     to={`/portfolio/${project.id}`}
                   >
                     {project.isVideo ? (
-                      <video
+                      <motion.video
                         playsInline
                         muted
                         className="pf-images video"
                       >
                         <source src={project.video} type="video/mp4" />
-                      </video>
+                      </motion.video>
                     ) : (
                       <img src={project.img} className="pf-images"></img>
                     )}

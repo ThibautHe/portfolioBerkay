@@ -18,18 +18,20 @@ export function Nav() {
           </NavLink>
         </li>
 
-        <li key={"Portfolio"}>
+        <li className="PortfolioMenu" key={"Portfolio"}>
           <NavLink
             to="/Portfolio"
-            className={`${navCSS.link} PortfolioMenu`}
+            className={`${navCSS.link} `}
             data-hover={"Portfolio"}
             href=""
           >
             Portfolio
-            <div className="portfolioDropdown">
-              <NavLink className={"pflink"} to="/extra">Extra</NavLink>
-            </div>
           </NavLink>
+          
+            <NavLink className={"pflink"} to="/extra">
+              Extra
+            </NavLink>
+
         </li>
       </ul>
     </>

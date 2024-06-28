@@ -13,10 +13,6 @@ export function ExtraPage() {
     const videos = document.querySelectorAll(".video");
 
     videos.forEach((video) => {
-      video.pause();
-    });
-
-    videos.forEach((video) => {
       video.addEventListener("mouseenter", () => {
         video.play();
       });
@@ -35,24 +31,33 @@ export function ExtraPage() {
           <ExtraItem
             className="extra-item"
             video={
-              <video playsInline controls className="video" style={{ width: "100%" }}>
+              <motion.video
+                playsInline
+                controls
+                className="video"
+                style={{ width: "100%" }}
+              >
                 <source
                   src="https://d1iu13wka1lg1b.cloudfront.net/Parallax.mp4"
                   type="video/mp4"
                 />
                 cant load the video
-              </video>
+              </motion.video>
             }
           />
           <ExtraItem
             video={
-              <video playsInline className="video" style={{ width: "100%" }}>
+              <motion.video
+                playsInline
+                className="video"
+                style={{ width: "100%" }}
+              >
                 <source
                   src="https://d1iu13wka1lg1b.cloudfront.net/WeaponHologram.mp4"
                   type="video/mp4"
                 />
                 cant load the video
-              </video>
+              </motion.video>
             }
           />
           <ExtraItem

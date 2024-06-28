@@ -238,11 +238,7 @@ const router = createBrowserRouter([
           {
             path: "",
             element: <ExtraPage />,
-          },
-          {
-            path: ":id",
-            element: <SingleProject />,
-          },
+          }
         ],
       },
       {

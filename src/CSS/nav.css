@@ -37,29 +37,27 @@
 
 
 
-.portfolioDropdown
+.PortfolioMenu
 {
-  display: block;
-  position: absolute;
-  background-color: red;
-  width: 100%;
-  left: 0;
-  top: 100%;
-  text-align: center;
-  padding: 16px 0;
-  border-top: 1px solid var(--inverseReadableColor);
-  background-color: var(--readableColor);
+  display: flex;
+  flex-direction: column;
 }
 
 .pflink
 {
   color: var(--inverseReadableColor);
   text-decoration: none;
+  display: block;
+  background-color: red;
+  text-align: center;
+  padding: 16px 0;
+  border-top: 1px solid var(--inverseReadableColor);
+  background-color: var(--readableColor);
 }
 
 .PortfolioMenu:hover
 {
-  display: block;
+  display: flex;
 }
 
 .PortfolioMenu
