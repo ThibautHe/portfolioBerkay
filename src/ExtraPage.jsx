@@ -31,38 +31,35 @@ export function ExtraPage() {
           <ExtraItem
             className="extra-item"
             video={
-              <motion.video
+              <video
+                preload="auto"
                 playsInline
                 controls
                 className="video"
                 style={{ width: "100%" }}
-              >
-                <source
-                  src="https://d1iu13wka1lg1b.cloudfront.net/Parallax.mp4"
-                  type="video/mp4"
-                />
-                cant load the video
-              </motion.video>
-            }
-          />
-          <ExtraItem
-            video={
-              <motion.video
-                playsInline
-                className="video"
-                style={{ width: "100%" }}
-              >
-                <source
-                  src="https://d1iu13wka1lg1b.cloudfront.net/WeaponHologram.mp4"
-                  type="video/mp4"
-                />
-                cant load the video
-              </motion.video>
+                src="https://d1iu13wka1lg1b.cloudfront.net/Parallax.mp4"
+              ></video>
             }
           />
           <ExtraItem
             video={
               <video playsInline className="video" style={{ width: "100%" }}>
+                <source
+                  src="https://d1iu13wka1lg1b.cloudfront.net/WeaponHologram.mp4"
+                  type="video/mp4"
+                />
+                cant load the video
+              </video>
+            }
+          />
+          <ExtraItem
+            video={
+              <video
+                playsInline
+                poster="https://d1iu13wka1lg1b.cloudfront.net/MysticOrb.mp4"
+                className="video"
+                style={{ width: "100%" }}
+              >
                 <source
                   src="https://d1iu13wka1lg1b.cloudfront.net/MysticOrb.mp4"
                   type="video/mp4"

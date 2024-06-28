@@ -38,6 +38,8 @@ export function Portfolio() {
   useEffect(() => {
     const videos = document.querySelectorAll(".video");
 
+    videos.src = videos.src; // hack for ios
+
     videos.forEach((video) => {
       video.addEventListener("mouseenter", () => {
         video.play();
