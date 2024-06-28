@@ -37,7 +37,7 @@ export function Portfolio() {
         "https://drive.google.com/file/d/1ZUznQJoNxFV9VqZLC27leuJZ3X7PW3Ux/preview",
       //video: "https://d1iu13wka1lg1b.cloudfront.net/ShowreelFiverr.mp4",
       description: "this is a placeholder description",
-      isVideo: true,
+      isVideo: false,
     },
   ];
 
@@ -74,24 +74,27 @@ export function Portfolio() {
                     to={`/portfolio/${project.id}`}
                   >
                     {project.isVideo ? (
-                      <div className="pf-images video">
-                        <iframe
-                          style={{ position: "absolute", top: "0", left: "0" }}
-                          width={"100%"}
-                          height={"100%"}
-                          src={project.video}
-                          frameborder="0"
-                        ></iframe>
+                      // <div className="pf-images video">
+                      //   <iframe
+                      //     style={{ position: "absolute", top: "0", left: "0" }}
+                      //     width={"100%"}
+                      //     height={"100%"}
+                      //     src={project.video}
+                      //     frameborder="0"
+                      //   ></iframe>
+                      // </div>
+
+                      <div className="pf-images">
+                        <motion.video
+                          playsInline
+                          muted
+                          poster={project.img}
+                          className=" video"
+                        >
+                          <source src={project.video} type="video/mp4" />
+                        </motion.video>
                       </div>
                     ) : (
-                      // <motion.video
-                      //   playsInline
-                      //   muted
-                      //   poster={project.img}
-                      //   className="pf-images video"
-                      // >
-                      //   <source src={project.video} type="video/mp4" />
-                      // </motion.video>
                       <img src={project.img} className="pf-images"></img>
                     )}
                   </NavLink>

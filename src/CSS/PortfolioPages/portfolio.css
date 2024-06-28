@@ -12,10 +12,8 @@
 
 .pf-images {
   height: 500px;
-  width: 100%;
   display: flex;
   justify-content: center;
-  position: relative;
 }
 
 .pf-main-content ul li {
@@ -44,6 +42,9 @@
 }
 
 @media screen and ((max-width: 768px)) {
+  .pf-images {
+    height: 300px;
+  }
   .pf-main-content ul {
     display: block;
   }
