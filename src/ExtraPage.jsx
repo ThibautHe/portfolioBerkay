@@ -13,6 +13,10 @@ export function ExtraPage() {
     const videos = document.querySelectorAll(".video");
 
     videos.forEach((video) => {
+      video.pause();
+    });
+
+    videos.forEach((video) => {
       video.addEventListener("mouseenter", () => {
         video.play();
       });
@@ -31,39 +35,46 @@ export function ExtraPage() {
           <ExtraItem
             className="extra-item"
             video={
-              <video
-                controls
-                className="video"
-                style={{ width: "100%" }}
-                src="https://d1iu13wka1lg1b.cloudfront.net/Parallax.mp4"
-              ></video>
+              <video playsInline poster="/Logo.png" controls className="video" style={{ width: "100%" }}>
+                <source
+                  src="https://d1iu13wka1lg1b.cloudfront.net/Parallax.mp4"
+                  type="video/mp4"
+                />
+                cant load the video
+              </video>
             }
           />
           <ExtraItem
             video={
-              <video
-                className="video"
-                style={{ width: "100%" }}
-                src="https://d1iu13wka1lg1b.cloudfront.net/WeaponHologram.mp4"
-              ></video>
+              <video playsInline poster="/Logo.png" className="video" style={{ width: "100%" }}>
+                <source
+                  src="https://d1iu13wka1lg1b.cloudfront.net/WeaponHologram.mp4"
+                  type="video/mp4"
+                />
+                cant load the video
+              </video>
             }
           />
           <ExtraItem
             video={
-              <video
-                className="video"
-                style={{ width: "100%" }}
-                src="https://d1iu13wka1lg1b.cloudfront.net/MysticOrb.mp4"
-              ></video>
+              <video playsInline className="video" style={{ width: "100%" }}>
+                <source
+                  src="https://d1iu13wka1lg1b.cloudfront.net/MysticOrb.mp4"
+                  type="video/mp4"
+                />
+                cant load the video
+              </video>
             }
           />
           <ExtraItem
             video={
-              <video
-                className="video"
-                style={{ width: "100%" }}
-                src="https://d1iu13wka1lg1b.cloudfront.net/Comp.mp4"
-              ></video>
+              <video playsInline className="video" style={{ width: "100%" }}>
+                <source
+                  src="https://d1iu13wka1lg1b.cloudfront.net/Comp.mp4"
+                  type="video/mp4"
+                />
+                cant load the video
+              </video>
             }
           />
         </div>

@@ -92,6 +92,8 @@ const About = () => {
               loop
               autoPlay
               muted
+              preload="auto"
+              playsInline
               src="https://d1iu13wka1lg1b.cloudfront.net/InteractiveMotionVFX.mp4"
               alt=""
             />

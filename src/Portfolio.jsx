@@ -38,6 +38,10 @@ export function Portfolio() {
     const videos = document.querySelectorAll(".video");
 
     videos.forEach((video) => {
+      video.pause();
+    });
+
+    videos.forEach((video) => {
       video.addEventListener("mouseenter", () => {
         video.play();
       });
@@ -68,10 +72,13 @@ export function Portfolio() {
                   >
                     {project.isVideo ? (
                       <video
+                        playsInline
+                        poster="/Logo.png"
                         muted
+                        autoPlay
                         className="pf-images video"
                       >
-                        <source src={project.video} type="video/mp4"/>
+                        <source src={project.video} type="video/mp4" />
                       </video>
                     ) : (
                       <img src={project.img} className="pf-images"></img>
