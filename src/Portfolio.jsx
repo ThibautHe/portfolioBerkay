@@ -38,8 +38,6 @@ export function Portfolio() {
   useEffect(() => {
     const videos = document.querySelectorAll(".video");
 
-    videos.src = videos.src; // hack for ios
-
     videos.forEach((video) => {
       video.addEventListener("mouseenter", () => {
         video.play();
@@ -73,6 +71,7 @@ export function Portfolio() {
                       <motion.video
                         playsInline
                         muted
+                        poster={project.video}
                         className="pf-images video"
                       >
                         <source src={project.video} type="video/mp4" />

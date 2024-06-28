@@ -32,9 +32,9 @@ export function ExtraPage() {
             className="extra-item"
             video={
               <video
-                preload="auto"
                 playsInline
                 controls
+                poster="https://d1iu13wka1lg1b.cloudfront.net/Parallax.mp4"
                 className="video"
                 style={{ width: "100%" }}
                 src="https://d1iu13wka1lg1b.cloudfront.net/Parallax.mp4"
@@ -43,7 +43,12 @@ export function ExtraPage() {
           />
           <ExtraItem
             video={
-              <video playsInline className="video" style={{ width: "100%" }}>
+              <video
+                playsInline
+                poster="https://d1iu13wka1lg1b.cloudfront.net/WeaponHologram.mp4"
+                className="video"
+                style={{ width: "100%" }}
+              >
                 <source
                   src="https://d1iu13wka1lg1b.cloudfront.net/WeaponHologram.mp4"
                   type="video/mp4"

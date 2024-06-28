@@ -89,6 +89,8 @@ const About = () => {
           <div className="main-story-video-div">
             <video
               className="main-video"
+              loop
+              autoPlay
               muted
               preload="auto"
               playsInline
