@@ -13,7 +13,9 @@ export function Portfolio() {
       id: 1,
       name: "Daydream",
       img: "/images/daydream.png",
-      video: "https://d1iu13wka1lg1b.cloudfront.net/Daydream.mp4",
+      video:
+        "https://drive.google.com/file/d/1ZW5nrSNMbS0ANDB1-rAEYWLPIZiPD1QL/preview",
+      //video: "https://d1iu13wka1lg1b.cloudfront.net/Daydream.mp4",
       description: "this is a placeholder description",
       isVideo: true,
     },
@@ -21,7 +23,9 @@ export function Portfolio() {
       id: 2,
       name: "Internship",
       img: "/images/stage.png",
-      video: "https://d1iu13wka1lg1b.cloudfront.net/Internship.mp4",
+      video:
+        "https://drive.google.com/file/d/1GtOR703XOe18L1UYZGsiX81z5bWSjb8F/preview",
+      //video: "https://d1iu13wka1lg1b.cloudfront.net/Internship.mp4",
       description: "this is a placeholder description",
       isVideo: true,
     },
@@ -29,7 +33,9 @@ export function Portfolio() {
       id: 3,
       name: "showreel",
       img: "/images/fiverr.png",
-      video: "https://d1iu13wka1lg1b.cloudfront.net/ShowreelFiverr.mp4",
+      video:
+        "https://drive.google.com/file/d/1ZUznQJoNxFV9VqZLC27leuJZ3X7PW3Ux/preview",
+      //video: "https://d1iu13wka1lg1b.cloudfront.net/ShowreelFiverr.mp4",
       description: "this is a placeholder description",
       isVideo: true,
     },
@@ -68,15 +74,24 @@ export function Portfolio() {
                     to={`/portfolio/${project.id}`}
                   >
                     {project.isVideo ? (
-                      <motion.video
-                        playsInline
-                        muted
-                        poster={project.img}
-                        className="pf-images video"
-                      >
-                        <source src={project.video} type="video/mp4" />
-                      </motion.video>
+                      <div className="pf-images video">
+                        <iframe
+                          style={{ position: "absolute", top: "0", left: "0" }}
+                          width={"100%"}
+                          height={"100%"}
+                          src={project.video}
+                          frameborder="0"
+                        ></iframe>
+                      </div>
                     ) : (
+                      // <motion.video
+                      //   playsInline
+                      //   muted
+                      //   poster={project.img}
+                      //   className="pf-images video"
+                      // >
+                      //   <source src={project.video} type="video/mp4" />
+                      // </motion.video>
                       <img src={project.img} className="pf-images"></img>
                     )}
                   </NavLink>
