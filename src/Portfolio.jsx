@@ -12,7 +12,7 @@ export function Portfolio() {
     {
       id: 1,
       name: "Daydream",
-      img: "",
+      img: "/images/daydream.png",
       video: "https://d1iu13wka1lg1b.cloudfront.net/Daydream.mp4",
       description: "this is a placeholder description",
       isVideo: true,
@@ -20,7 +20,7 @@ export function Portfolio() {
     {
       id: 2,
       name: "Internship",
-      img: "",
+      img: "/images/stage.png",
       video: "https://d1iu13wka1lg1b.cloudfront.net/Internship.mp4",
       description: "this is a placeholder description",
       isVideo: true,
@@ -28,7 +28,7 @@ export function Portfolio() {
     {
       id: 3,
       name: "showreel",
-      img: "",
+      img: "/images/fiverr.png",
       video: "https://d1iu13wka1lg1b.cloudfront.net/ShowreelFiverr.mp4",
       description: "this is a placeholder description",
       isVideo: true,
@@ -71,7 +71,7 @@ export function Portfolio() {
                       <motion.video
                         playsInline
                         muted
-                        poster={project.video}
+                        poster={project.img}
                         className="pf-images video"
                       >
                         <source src={project.video} type="video/mp4" />

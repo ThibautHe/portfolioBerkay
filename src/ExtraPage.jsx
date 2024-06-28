@@ -34,7 +34,7 @@ export function ExtraPage() {
               <video
                 playsInline
                 controls
-                poster="https://d1iu13wka1lg1b.cloudfront.net/Parallax.mp4"
+                poster="/images/tuto.png"
                 className="video"
                 style={{ width: "100%" }}
                 src="https://d1iu13wka1lg1b.cloudfront.net/Parallax.mp4"
@@ -45,7 +45,7 @@ export function ExtraPage() {
             video={
               <video
                 playsInline
-                poster="https://d1iu13wka1lg1b.cloudfront.net/WeaponHologram.mp4"
+                poster="/images/weaponholo.png"
                 className="video"
                 style={{ width: "100%" }}
               >
@@ -61,7 +61,7 @@ export function ExtraPage() {
             video={
               <video
                 playsInline
-                poster="https://d1iu13wka1lg1b.cloudfront.net/MysticOrb.mp4"
+                poster="/images/mysticorbe.png"
                 className="video"
                 style={{ width: "100%" }}
               >
@@ -75,7 +75,12 @@ export function ExtraPage() {
           />
           <ExtraItem
             video={
-              <video playsInline className="video" style={{ width: "100%" }}>
+              <video
+                playsInline
+                poster="/images/crypto.png"
+                className="video"
+                style={{ width: "100%" }}
+              >
                 <source
                   src="https://d1iu13wka1lg1b.cloudfront.net/Comp.mp4"
                   type="video/mp4"
