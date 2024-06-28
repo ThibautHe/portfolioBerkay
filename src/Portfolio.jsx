@@ -73,9 +73,7 @@ export function Portfolio() {
                     {project.isVideo ? (
                       <video
                         playsInline
-                        poster="/Logo.png"
                         muted
-                        autoPlay
                         className="pf-images video"
                       >
                         <source src={project.video} type="video/mp4" />
