@@ -334,6 +334,18 @@
 }
 
 @media screen and ((max-width: 768px)) {
+  .slider-container{
+  }
+  .MainContentContainer{
+    height: 100%;
+    padding-bottom: 2em;
+  }
+  .profilepic{
+    display: none;
+  }
+  .mainDescription{
+    text-align: justify;
+  }
   .main-story-container {
     height: auto;
   }
@@ -352,6 +364,7 @@
   }
   .main-story-title {
     margin: auto;
+    padding: 1.5em;
   }
   .main-story-video-div {
     width: 90%;

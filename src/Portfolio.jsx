@@ -70,8 +70,9 @@ export function Portfolio() {
                       <video
                         muted
                         className="pf-images video"
-                        src={project.video}
-                      />
+                      >
+                        <source src={project.video} type="video/mp4"/>
+                      </video>
                     ) : (
                       <img src={project.img} className="pf-images"></img>
                     )}

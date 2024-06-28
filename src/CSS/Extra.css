@@ -9,3 +9,15 @@
     gap: 15px;
     padding: 4em;
 }
+
+@media screen and ((max-width: 768px)) {
+
+    .extra-content
+{
+
+    grid-template-columns: repeat(1,1fr);
+    padding: 1em;
+}
+
+}
+  

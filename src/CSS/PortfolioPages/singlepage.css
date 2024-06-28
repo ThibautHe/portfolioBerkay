@@ -156,6 +156,16 @@
 }
 
 @media screen and ((max-width: 768px)) {
+  .nextProject
+  {
+    height: 100%;
+  }
+  .nextProject video{
+    position: relative;
+  }
+  .logosContainer{
+    padding-top: 2em;
+  }
   .main-img {
     width: 75%;
   }

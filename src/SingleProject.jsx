@@ -226,7 +226,7 @@ export function SingleProject() {
         </div>
       </section>
 
-      <div style={{ backgroundColor: theme }}>
+      <div className="logosContainer" style={{ backgroundColor: theme }}>
         <AnimatedDiv className="softwares-logo" staggerchildrens={true}>
           {project.softwareUsed.map((software, index) => (
             <SoftwareCard

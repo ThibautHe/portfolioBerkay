@@ -25,13 +25,13 @@ import PpSvg from "./Components/Svg/PpSvg.jsx";
 const About = () => {
   const { theme, readableColor, color1, color2 } = useColorTheme();
   const softwareData = [
-      {
+    {
       id: 1,
       logoSrc: <AeSvg />,
       softwareName: "After Effects",
       type: "svg",
     },
-      {
+    {
       id: 2,
       logoSrc: <PpSvg />,
       softwareName: "Premier Pro",
@@ -60,6 +60,7 @@ const About = () => {
             animations and resonate with audiences
           </p>
           <img
+            className="profilepic"
             style={{
               position: "absolute",
               right: "0",
@@ -167,8 +168,8 @@ const About = () => {
       >
         <div className="softwares-content">
           <h1>
-            <span className="bold">softwares</span>
-            <span className="light"> i use</span>
+            <span className="bold">software</span>
+            <span className="light"> I use</span>
           </h1>
           <div
             className="pf-hr grid-2-span-col"

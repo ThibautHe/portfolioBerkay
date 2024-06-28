@@ -47,6 +47,15 @@ export function HamburgerMenu() {
                 portfolio
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to={"/Extra"}
+                onClick={() => setIsActive(false)}
+                className="menu-navlink"
+              >
+                Extra
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
