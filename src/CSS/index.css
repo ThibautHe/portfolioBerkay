@@ -1,0 +1,375 @@
+@font-face {
+  font-family: Octarine;
+  src: url("../../Fonts/OctarineFree/Octarine-Light.otf");
+}
+
+@font-face {
+  font-family: OctarineBold;
+  src: url("../../Fonts/OctarineFree/Octarine-Bold.otf");
+}
+@font-face {
+  font-family: OctarineLightOblique;
+  src: url("../../Fonts/OctarineFree/Octarine-LightOblique.otf");
+}
+
+@font-face {
+  font-family: OctarineBoldOblique;
+  src: url("../../Fonts/OctarineFree/Octarine-BoldOblique.otf");
+}
+* {
+  font-family: Octarine;
+  margin: 0;
+}
+
+.slider-container {
+  margin: 8% 0;
+  width: 60%; /* Adjust the width as needed */
+}
+
+.slider {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: relative;
+}
+
+.slider-ball {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider-ball-outline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vslider-container {
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+}
+
+.vslider {
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.vslider-ball {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.vslider-ball-outline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#slider-value {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.MainContentContainer {
+  height: 91.5vh;
+  position: relative;
+}
+.mainArticle {
+  padding-top: 10%;
+  width: 70%;
+  margin: 0 10% 0 10%;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(1rem, 10vw + 1rem, 5rem);
+  font-weight: 200;
+}
+.mainDescription {
+  max-width: 444px;
+  padding-top: 3em;
+}
+.mainTitleSpan {
+  margin-left: 20%;
+}
+
+.education-container {
+  position: relative;
+  padding-bottom: 5vh;
+  color: black;
+}
+.education-title {
+  padding-top: 50px;
+  text-align: center;
+  font-family: OctarineBold;
+}
+.education-line {
+  margin: 20px auto;
+  height: 5px;
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+  width: 60%;
+}
+.education-content-container {
+  text-align: center;
+  margin: 0 20%;
+  background-color: #f3f3f3;
+  margin-bottom: 100px;
+}
+.education-content {
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.education-school {
+  margin: 20px 0 40px 0;
+  font-size: 1.625rem;
+}
+.education-direction {
+  margin: 0 0 40px 0;
+  font-size: 1.438rem;
+}
+
+.education-img {
+  margin: 50px 0 0 0;
+  width: 256px;
+}
+
+.education-description {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+  font-size: 0.938rem;
+  font-weight: 100;
+}
+
+.softwares-container {
+  padding-top: 100px;
+  padding-bottom: 5%;
+}
+.softwares-content {
+  text-align: center;
+}
+.softwares-content hr {
+  margin: 0 20%;
+  margin-top: 25px;
+}
+.softwares-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+  font-size: .8em;
+}
+
+.softwares {
+  padding: 15px;
+  text-align: center;
+  margin: 25px;
+}
+.software-card-container {
+  width: 100px;
+  height: 100px;
+  background-color: var(--readableColor);
+  border-radius: 25px;
+  position: relative;
+  transition: scale 0.5s;
+  margin: 15px;
+}
+.software-card-container:hover {
+  scale: 1.05;
+}
+
+.software-card-container {
+  position: relative;
+}
+
+.software-card-logo,
+.software-card-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  transform: translate(-50%, -100%);
+  animation: fade-in 500ms;
+  color: white;
+  font-size: .8em;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.software-card-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.software-card-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.softwares img {
+  width: 64px;
+}
+.softwares h1 {
+  margin-top: 15px;
+  font-size: 3vh;
+}
+
+.main-footer {
+  background-color: #212121;
+  text-align: center;
+}
+
+.main-footer h1 {
+  padding-top: 100px;
+  color: white;
+  font-size: 5em;
+  font-family: OctarineBold;
+}
+.main-footer-description {
+  width: 50%;
+  margin: 3em auto;
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+
+.weblink
+{
+  display: block;
+  color: white;
+  margin: 2em 0 0 0;
+}
+
+.main-footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 50px 0;
+}
+.main-footer li {
+  margin: 25px 25px;
+}
+
+.main-footer a:hover {
+  animation-duration: 1s;
+  background-color: var(--lightColor);
+  color: rgb(15, 12, 29);
+  cursor: pointer;
+}
+
+.main-footer a {
+  text-decoration: none;
+  padding: 15px 25px;
+  border: 1px solid var(--lightColor);
+  color: white;
+  transition: 0.8s;
+  font-family: OctarineLightOblique;
+  font-size: 15px;
+}
+
+.footer-line {
+  margin: 20px auto;
+  height: 5px;
+  background-color: var(--lightColor);
+  width: 90%;
+}
+
+.main-footer-close {
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+
+.bold {
+  font-family: OctarineBold;
+  font-weight: bold;
+}
+.light {
+  font-family: Octarine;
+  font-weight: 300;
+}
+
+@media screen and ((max-width: 768px)) {
+  .main-story-container {
+    height: auto;
+  }
+  .main-story-content {
+    width: 100%;
+    padding: 10% 0;
+  }
+  .main-story-article {
+    display: block;
+  }
+  .main-story-article div {
+    margin: auto;
+  }
+  .main-story-description {
+    margin: auto;
+  }
+  .main-story-title {
+    margin: auto;
+  }
+  .main-story-video-div {
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .education-content-container {
+    margin: auto;
+    width: 90%;
+  }
+  .softwares-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 33%);
+    gap: 15px 0;
+    padding-top: 0;
+  }
+  .software-card-container {
+    margin: auto;
+  }
+}

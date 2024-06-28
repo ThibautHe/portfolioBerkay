@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "jsx":"react-jsx"
+  },
+  "files": [
+    "src/SingleProject.jsx"
+  ]
+}

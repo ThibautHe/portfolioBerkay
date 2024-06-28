@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Octarine;
+  src: url("../../Fonts/OctarineFree/Octarine-Light.otf");
+}
+
+@font-face {
+  font-family: OctarineBold;
+  src: url("../../Fonts/OctarineFree/Octarine-Bold.otf");
+}
+@font-face {
+  font-family: OctarineOblique;
+  src: url("../../Fonts/OctarineFree/Octarine-LightOblique.otf");
+}
+
+@font-face {
+  font-family: OctarineBoldOblique;
+  src: url("../../Fonts/OctarineFree/Octarine-BoldOblique.otf");
+}
+
+.regular {
+  font-family: Octarine;
+  font-weight: normal;
+}
+
+.boldFont {
+  font-family: OctarineBold;
+}
+.regularOblique {
+  font-family: OctarineOblique;
+}
+
+.boldOblique {
+  font-family: OctarineBoldOblique;
+}
+
+.yellow {
+  color: var(--lightColor);
+}

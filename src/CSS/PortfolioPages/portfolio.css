@@ -1,0 +1,51 @@
+.pf-main-container {
+  padding-bottom: 15vh;
+}
+.pf-main-content ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  font-size: 0;
+  padding: 0 10%;
+
+}
+
+.pf-images {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.pf-main-content ul li {
+  overflow: hidden;
+}
+.pf-main-content ul li a{
+  display: flex;
+  justify-content: center;
+}
+
+
+.grid-2-span-col {
+  grid-column: span 2;
+}
+
+.pf-main-title {
+  text-align: center;
+  padding: 5vh 0;
+  color: var(--readableColor);
+}
+
+.pf-hr {
+  margin: 5vh auto;
+  border-radius: 10px;
+  background-color: var(--readableColor);
+}
+
+@media screen and ((max-width: 768px)) {
+  .pf-main-content ul {
+    display: block;
+  }
+  .pf-main-content ul li {
+    margin: 15px 0;
+  }
+}

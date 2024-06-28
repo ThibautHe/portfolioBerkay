@@ -1,0 +1,10 @@
+# Video
+*.asf                   lfs
+*.avi                   lfs
+*.flv                   lfs
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mpeg                  lfs
+*.mpg                   lfs
+*.ogv                   lfs
+*.wmv                   lfs

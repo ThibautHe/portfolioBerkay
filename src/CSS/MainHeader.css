@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Octarine;
+  src: url("../../Fonts/OctarineFree/Octarine-Light.otf");
+}
+
+div {
+  /* font-family: Octarine; */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainheader-ul {
+  text-decoration: none;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  z-index: 10;
+  /* second way of centering the nav -- remove width 0 on h1 if used
+  position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  */
+}
+
+li {
+  padding: 5px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.MainHeader {
+  display: flex;
+  padding: 25px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.MainHeader h1 {
+  width: 0; /*makes it so the nav can margin auto over the whole div*/
+}
+
+@media screen and ((max-width: 768px)) {
+  .mainheader-ul {
+    display: none;
+  }
+}
