@@ -364,6 +364,7 @@
   }
   .main-story-description {
     margin: auto;
+    text-align: justify;
   }
   .main-story-title {
     margin: auto;
@@ -383,7 +384,7 @@
     display: grid;
     grid-template-columns: repeat(2, 33%);
     gap: 15px 0;
-    padding-top: 0;
+    padding-bottom: 3em;
   }
   .software-card-container {
     margin: auto;
