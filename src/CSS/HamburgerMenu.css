@@ -35,8 +35,7 @@
 }
 .menu:hover span {
   transition: 1s;
-  border: 1px solid white;
-  background-color: var(--readableColor);
+  /* background-color: var(--readableColor); */
 }
 
 .menu span {
@@ -48,7 +47,6 @@
   transition: transform 1s, width 1s;
   border-radius: 50px;
   padding: 1px;
-  border: 1px solid var(--readableColor);
 }
 
 .menu-active span:nth-child(1) {
@@ -86,8 +84,8 @@
   transition: transform 1s, visibility 1s;
   visibility: hidden; /* Initially hidden */
 }
-.menu-container-active {
-  visibility: visible; /* Make visible */
+.menu-container-active span {
+  background-color: white;
 }
 .menu-content-active {
   visibility: visible; /* Make visible */

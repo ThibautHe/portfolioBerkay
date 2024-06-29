@@ -165,7 +165,7 @@
 }
 
 .softwares-container {
-  padding-top: 100px;
+  padding-top: 0px;
   padding-bottom: 5%;
 }
 .softwares-content {
@@ -179,7 +179,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8em;
+  padding-top: 0em;
   font-size: .8em;
 }
 
