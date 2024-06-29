@@ -154,6 +154,9 @@
 .project-problems h1 {
   margin: 5% 0;
 }
+.logosContainer{
+  padding-top: 6em;
+}
 
 @media screen and ((max-width: 768px)) {
   .nextProject
