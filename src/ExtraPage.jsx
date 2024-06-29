@@ -89,6 +89,54 @@ export function ExtraPage() {
               </video>
             }
           />
+          <ExtraItem
+            video={
+              <video
+                playsInline
+                poster="/images/Kapena.png"
+                className="video"
+                style={{ width: "100%" }}
+              >
+                <source
+                  src="https://d1iu13wka1lg1b.cloudfront.net/KAPAP.mp4"
+                  type="video/mp4"
+                />
+                cant load the video
+              </video>
+            }
+          />
+          <ExtraItem
+            video={
+              <video
+                playsInline
+                poster="/images/proto2.png"
+                className="video"
+                style={{ width: "100%" }}
+              >
+                <source
+                  src="https://d1iu13wka1lg1b.cloudfront.net/prototype2.mp4"
+                  type="video/mp4"
+                />
+                cant load the video
+              </video>
+            }
+          />
+          <ExtraItem
+            video={
+              <video
+                playsInline
+                poster="/images/sussol.png"
+                className="video"
+                style={{ width: "100%" }}
+              >
+                <source
+                  src="https://d1iu13wka1lg1b.cloudfront.net/sussol.mp4"
+                  type="video/mp4"
+                />
+                cant load the video
+              </video>
+            }
+          />
         </div>
       </section>
       <Footer></Footer>

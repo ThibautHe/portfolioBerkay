@@ -13,8 +13,7 @@ export function Footer() {
           </span>
         </h1>
         <p className="main-footer-description">
-          If you want to get in touch, don't hesitate to send an email or contact
-          me on linkedin
+          A project together? Make sure to contact me via mail or linkedin
         </p>
         <ul>
           <li>
@@ -30,7 +29,9 @@ export function Footer() {
           </li>
         </ul>
         <div className="footer-line"></div>
-        <p className="main-footer-close">Copyright 2024 Berkay Erdemir, All Rights Reserved</p>
+        <p className="main-footer-close">
+          Copyright 2024 Berkay Erdemir, All Rights Reserved
+        </p>
       </div>
     </>
   );
