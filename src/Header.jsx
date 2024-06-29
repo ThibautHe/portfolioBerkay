@@ -16,7 +16,9 @@ export function Header() {
     <>
       <div className="MainHeader" style={{ backgroundColor: theme }}>
         <NavLink to={"/"}>
-          <Logo />
+          <div className="logo">
+            <Logo />
+          </div>
         </NavLink>
 
         <Nav />
