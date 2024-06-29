@@ -53,7 +53,7 @@ export function HamburgerMenu() {
                 onClick={() => setIsActive(false)}
                 className="menu-navlink"
               >
-                Extra
+                extra
               </NavLink>
             </li>
           </ul>
