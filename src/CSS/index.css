@@ -334,6 +334,9 @@
 }
 
 @media screen and ((max-width: 768px)) {
+  .mainArticle {
+    margin: auto;
+  }
   .slider-container{
   }
   .MainContentContainer{
