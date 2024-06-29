@@ -94,7 +94,7 @@ const About = () => {
               muted
               preload="auto"
               playsInline
-              src="https://d1iu13wka1lg1b.cloudfront.net/InteractiveMotionVFX.mp4"
+              src="https://d1iu13wka1lg1b.cloudfront.net/ShowreelFiverr.mp4"
               alt=""
             />
           </div>
@@ -107,15 +107,21 @@ const About = () => {
               and <span className={`${FontsCSS.boldOblique}`}>Vfx</span>
             </h1>
             <p className="main-story-description">
-              Ever since I can remember I've been playing video games, It has
-              always been a mystery to me on how they were made, untill I
-              started to learn more about the dev behind. After which it was
-              even MORE a mystery, a mystery that I would love to explore.
-              That's also what I did. Along my exploration I went to a school
-              where I discovered general coding but also last but not least, Web
-              development, This is where my love for web dev started too. I'm
-              still to this day fascinated by everything possible on the web and
-              I would love to explore this field even more.
+              I pursued my studies in Multimedia and Communication Technologies
+              at Erasmus Hogeschool Brussel, where I gained a comprehensive
+              education that encompassed various facets of digital media. The
+              curriculum included web design and programming, which equipped me
+              with the skills to create responsive and visually appealing
+              websites using HTML, CSS, and JavaScript. Working in big groups
+              was a significant part of the program, fostering collaboration and
+              project management skills essential for real-world applications.
+              My passion for visual storytelling was nurtured through extensive
+              training in video editing and motion graphics, where I learned to
+              use industry-standard software like Adobe Premiere Pro and After
+              Effects. This diverse educational experience not only broadened my
+              technical abilities but also enhanced my creative thinking and
+              problem-solving skills, preparing me for a dynamic career in the
+              multimedia and communication technology fields.
             </p>
           </div>
         </div>
@@ -238,7 +244,7 @@ const router = createBrowserRouter([
           {
             path: "",
             element: <ExtraPage />,
-          }
+          },
         ],
       },
       {

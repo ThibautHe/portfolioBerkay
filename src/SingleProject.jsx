@@ -54,11 +54,10 @@ export function SingleProject() {
       showcaseImg: [],
       softwareUsed: [Softwares.AE, Softwares.PP, Softwares.Blender],
       description:
-        "This is a website i made for a freelancer, he wanted to show pictures and also he wanted that people could send him a mail directly from the wesbite",
+        "Starting a VFX project can be complicated and very time-consuming. It takes a lot of preparation work to determine everything in advance. Throughout my research I learned how I had to work with Blender. I did a lot of research before I started filming with my camera. I didn't know that Blender had a good tracking system and this made it better for me since I was also going to use a 3D object. Blender is also free so for the For people looking for a free program to track, Blender is perfect.",
       probleme:
-        "I wasnt familiar with how the mails worked, I found out I needed a domain which i never really work in depth with, So i figured how to work with custom domain.",
-      solution:
-        "I acquired the domain and made it so it had its own url name and also this made it so the mails could be sent from this url domain. Ultimately i'm happy with how it turned out and works now",
+        "Making a VFX video was very interesting. I have never done this before and always wanted to try it. But the workflow was bit confusing. I didn't really know how to start and which programs I should use. I kind of regret my sword scene. I would have liked to keep it longer, but since Blender rendered at highest quality in 5 seconds in 12 hours, I chose to keep it short. Rendering several images with tracking points would take me weeks to render in total. So I did several things during the period of my research to create a successful tracking and rendering.",
+      solution: "",
     },
     {
       id: 2,
@@ -68,26 +67,24 @@ export function SingleProject() {
       showcaseImg: [],
       softwareUsed: [Softwares.AE, Softwares.PP],
       description:
-        "The final test of my bachelor was an internship, where I got the opportunity to go work at fishing cactus, One of the biggest Gaming company in belgium. I was there as a Gameplay developper where I assisted the team in every part of the development, such as the meetings the development and their workflow. It was a very enriching experience. I'm very gratefull for this opportunity",
+        "To answer the research question “What is the ideal workflow to create realistic 3D tracking and rendering?” To answer: it is important that you do a little research in advance about certain software such as Blender or Cinema 4D. These two softwares are very good for 3D tracking. But if the new VFX compositors have a low budget they can use Blender for free. Before you start a project, it is certainly important to write a script. Hereby It is also important if you are going to film something that you create storyboards for a clearer image and that you write down the settings of your camera somewhere because this will be important in Blender.",
       probleme:
-        "At Fishing I worked for a good month only on bugfixing to get the hang of it. I consistantly faced new and different bugs and for the first time I had to find my way through a codebase that I didnt wrote myself. Later I went on to develop my own upgrade systeme that would empower the player. It was also very enriching for me because I had to work in combination with code all over the codebase.",
-      solution:
-        "What I learned from this experience was that I had still alot to learn, and that things rarely goes as quickly as we would expect. I learned to work in a team and also to follow a workflow, on top of that I learned to use github more effectively. After my internship I immediatly made a list of some topics in which I had to improve.",
+        "If object tracking needs to be done, it is important that you provide a prop or tracking points on an object as you will track this later on a 3D software. In my case I created a tracking stick as a tracking object. In addition, you can use blender or the chosen tracking software to do your tracking. Once that is done you can render your object as a png sequence and import to After Effects. And finally you can do the compositing on After effects in which you will mask, color grade and add effects if necessary.",
+      solution: "",
       link: "",
     },
     {
       id: 3,
       name: "Showreel",
-      categorie: "Motion",
-      img: "https://d1iu13wka1lg1b.cloudfront.net/ShowreelFiverr.mp4",
+      categorie: "VFX",
+      img: "https://d1iu13wka1lg1b.cloudfront.net/InteractiveMotionVFX.mp4",
       showcaseImg: [],
       softwareUsed: [Softwares.AE, Softwares.PP],
       description:
-        "This is the latest project I started, I wanted to challenge myself to learn now techs and with that going out of my comfort zone.",
+        "If object tracking needs to be done, it is important that you provide a prop or tracking points on an object as you will track this later on a 3D software. In my case I created a tracking stick as a tracking object. In addition, you can use blender or the chosen tracking software to do your tracking. Once that is done you can render your object as a png sequence and import to After Effects. And finally you can do the compositing on After effects in which you will mask, color grade and add effects if necessary.",
       probleme:
-        "making a website in React but this time by using TypeScript, I've been working alot with C# and I liked the way you had to define every type, That's why I felt attracted by Typescript. Secondly, I wanted to explore new features, I want to do it by implementing evey piece of other websites that I like.",
-      solution:
-        "I worked with Typescript inside the React framework. The project is still ongoing tho and I plan on updating the website every weekend, I want to add alot of interaction and animations. I would also want to create a CMS for this website. This would primarly be to train my backend skill which is currently not where I would like it to be.",
+        "Firstly, achieving precise camera tracking is often difficult due to the limitations of the iPhone’s sensors and the need for steady, consistent movements. Lighting variations can also pose problems, as changes in ambient light can affect the tracking markers' visibility and consistency. The iPhone’s relatively small screen and limited processing power compared to professional equipment make real-time adjustments and rendering slower and less accurate. Furthermore, integrating the VFX elements seamlessly into the live footage requires meticulous attention to detail to ensure that shadows, reflections, and movements match perfectly. Post-production can be labor-intensive, as fine-tuning the alignment and blending the VFX with the original video to make it appear realistic demands significant time and expertise.",
+      solution: "",
       link: "",
     },
   ];
