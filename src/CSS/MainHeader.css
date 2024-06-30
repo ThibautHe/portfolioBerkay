@@ -36,7 +36,6 @@ li {
   display: flex;
   padding: 25px;
   box-sizing: border-box;
-  align-items: center;
 }
 .MainHeader h1 {
   width: 0; /*makes it so the nav can margin auto over the whole div*/

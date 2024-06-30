@@ -1,0 +1,68 @@
+.loader
+{
+    background-color: var(--readableColor);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.loader div:nth-child(2){
+    background-color:var(--inverseReadableColor);
+    width:0px;
+    height:10px;
+    position:absolute;
+    left:0;
+    animation-name: line;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+
+}
+.circle{
+    background-color:var(--inverseReadableColor);
+    width:150px;
+    height:150px;
+    position:absolute;
+    left:0;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: circleanim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
+
+}
+.circle-center{
+    background-color:var(--readableColor);
+    width:100px;
+    height:100px;
+    position:absolute;
+    border-radius: 100%;
+
+}
+
+@keyframes circleanim
+{
+    from{
+        left:0
+    }
+    to
+    {
+        left: 70%;
+    }
+}
+@keyframes line
+{
+    from{
+        width: 0;
+    }
+    to
+    {
+        width: 100%;
+    }
+}
