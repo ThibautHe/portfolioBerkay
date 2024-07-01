@@ -41,7 +41,7 @@
   background-color: var(--readableColor);
 }
 
-@media screen and ((max-width: 768px)) {
+@media screen and ((max-device-width: 768px)) {
   .pf-images {
     height: 300px;
   }
