@@ -107,8 +107,8 @@ left: 65%;
   }
 
   @media only screen 
-    and (width: 390px) 
-    and (height: 844px) 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
     and (-webkit-device-pixel-ratio: 3) {
         .circle {
             width: 50px;
