@@ -125,16 +125,21 @@ const About = () => {
               details in blockbuster films or the immersive environments in
               video games. This fascination spurred my curiosity about the VFX
               workflow and the intricate process of creating these visual
-              masterpieces. Over time, I delved deeper into understanding the
-              steps involved in VFX production, from concept development and
-              storyboarding to 3D modeling, texturing, and compositing. I was
-              particularly intrigued by the combination of technical skills and
-              artistic creativity required to make seamless and believable
-              effects. During my studies and internships, I actively sought
-              opportunities to learn and apply various VFX techniques, using
-              industry-standard software like After Effects and Cinema 4D. My
-              passion for VFX grew as I practiced and experimented, constantly
-              inspired by the incredible work of VFX artists in the
+              masterpieces.
+              <br />
+              <br />
+              Over time, I delved deeper into understanding the steps involved
+              in VFX production, from concept development and storyboarding to
+              3D modeling, texturing, and compositing. I was particularly
+              intrigued by the combination of technical skills and artistic
+              creativity required to make seamless and believable effects.
+              During my studies and internships, I actively sought opportunities
+              to learn and apply various VFX techniques, using industry-standard
+              software like After Effects and Cinema 4D.
+              <br />
+              <br />
+              My passion for VFX grew as I practiced and experimented,
+              constantly inspired by the incredible work of VFX artists in the
               entertainment industry. The ability to transform imagination into
               reality through VFX continues to drive me, and I am eager to
               contribute to creating captivating visual experiences that leave
@@ -158,7 +163,6 @@ const About = () => {
         <div className="education-line" />
         <div className="education-content-container">
           <div className="education-content">
-            <h2 className="education-school">erasmus hogeschool brussels</h2>
             <h3 className="education-direction">
               <span className="bold">multimedia</span> &{" "}
               <span className="bold"> creative technologies</span>
