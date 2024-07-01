@@ -110,7 +110,7 @@
   text-decoration: none;
 }
 
-@media screen and ((max-device-width: 768px)) {
+@media screen and ((max-device-width: 768px)) and (-webkit-device-pixel-ratio: 3) {
   .menu {
     display: flex;
   }
