@@ -10,7 +10,8 @@
     padding: 4em;
 }
 
-@media screen and ((max-device-width: 768px)) and (-webkit-device-pixel-ratio: 3) {
+@media screen and ((max-device-width: 768px)) and (-webkit-device-pixel-ratio: 3),
+screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
 
     .extra-content
 {

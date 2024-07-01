@@ -46,3 +46,11 @@ li {
     display: none;
   }
 }
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) {
+  .mainheader-ul {
+    display: none;
+  }
+}

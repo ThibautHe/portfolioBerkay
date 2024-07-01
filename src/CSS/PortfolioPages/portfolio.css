@@ -41,7 +41,8 @@
   background-color: var(--readableColor);
 }
 
-@media screen and ((max-device-width: 768px)) and (-webkit-device-pixel-ratio: 3) {
+@media screen and ((max-device-width: 768px)) and (-webkit-device-pixel-ratio: 3),
+screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
   .pf-images {
     height: 300px;
   }
@@ -52,19 +53,3 @@
     margin: 15px 0;
   }
 }
-
-@media only screen 
-    and (width: 390px) 
-    and (height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
-
-      .pf-images {
-        height: 300px;
-      }
-      .pf-main-content ul {
-        display: block;
-      }
-      .pf-main-content ul li {
-        margin: 15px 0;
-      }
-     }
