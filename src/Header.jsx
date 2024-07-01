@@ -6,7 +6,14 @@ import "./CSS/MainHeader.css";
 import { useColorTheme } from "./Hooks/useColorTheme.jsx";
 import { NavLink, Outlet } from "react-router-dom";
 import { HamburgerMenu } from "./HamburgerMenu.jsx";
-import { AnimatePresence, easeIn, motion } from "framer-motion";
+import {
+  AnimatePresence,
+  cubicBezier,
+  easeIn,
+  easeInOut,
+  easeOut,
+  motion,
+} from "framer-motion";
 import Preloader from "./Components/preloader.jsx";
 
 export function Header() {
@@ -18,7 +25,7 @@ export function Header() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
   }, []);
@@ -31,11 +38,35 @@ export function Header() {
             <motion.div
               key="preloader"
               initial={{ y: "0" }}
-              exit={{ y: "-100vh" }}
-              transition={{ duration: 1, ease: easeIn }}
-              style={{ position: "fixed", zIndex: 100 }}
+              exit={{ y: "-100%" }}
+              transition={{
+                duration: 2,
+                ease: cubicBezier(0, 1.18, 0.5, 0.96),
+              }}
+              style={{
+                position: "fixed",
+                zIndex: 100,
+                overflow: "hidden",
+                backgroundColor: readableColor,
+                width: "100vw",
+                height: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
             >
-              <Preloader />
+              <motion.div
+                key="preloader"
+                initial={{ y: "0" }}
+                exit={{ y: "100%" }}
+                transition={{
+                  duration: 2,
+                  ease: cubicBezier(0, 1.18, 0.5, 0.96),
+                }}
+                style={{ width: "100%", height: "100%" }}
+              >
+                <Preloader />
+              </motion.div>
             </motion.div>
           ) : (
             <div>

@@ -1,68 +1,104 @@
-.loader
+.container
 {
+
+}
+/* .loader {
     background-color: var(--readableColor);
     width: 100vw;
     height: 100vh;
-    position: fixed;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.loader div:nth-child(2){
-    background-color:var(--inverseReadableColor);
-    width:0px;
-    height:10px;
-    position:absolute;
-    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  } */
+  
+  .loader-content {
+    top: 50vh; /* Center vertically */
+    left: 50vw; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Translate to center */
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    z-index: 100;
+  }
+  
+  .line {
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    background-color: var(--inverseReadableColor);
+    width: 0;
+    height: 10px;
     animation-name: line;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 500ms;
+    animation-delay: 1000ms;
+    transform: translateY(-50%);
 
-}
-.circle{
-    background-color:var(--inverseReadableColor);
-    width:150px;
-    height:150px;
-    position:absolute;
-    left:0;
-    border-radius: 100%;
+  }
+  
+  .circle {
+    top: 50%;
+    left: 30%;
+
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: var(--inverseReadableColor);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     animation-name: circleanim;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-delay: 1000ms;
-
-}
-.circle-center{
-    background-color:var(--readableColor);
-    width:100px;
-    height:100px;
-    position:absolute;
-    border-radius: 100%;
-
-}
-
-@keyframes circleanim
-{
-    from{
-        left:0
+    animation-delay: 2000ms;
+  }
+  
+  .circle-center {
+    background-color: var(--readableColor);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  @keyframes circleanim {
+    from {
+ left: 30%;
     }
-    to
-    {
-        left: 70%;
+    to {
+left: 65%;
     }
-}
-@keyframes line
-{
-    from{
-        width: 0;
+  }
+  
+  @keyframes line {
+    from {
+      width: 0;
     }
-    to
-    {
-        width: 100%;
+    to {
+      width: 40%;
     }
-}
+  }
+  @keyframes bg {
+    from {
+      height: 100vh;
+    }
+    to {
+      height: 0;
+    }
+  }
+  
+  @media screen and ((max-width: 768px)) {
+    .circle {
+        width: 50px;
+        height: 50px;
+      }
+      
+      .circle-center {
+        width: 30px;
+        height: 30px;
+      }
+  }
