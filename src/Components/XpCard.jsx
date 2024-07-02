@@ -12,11 +12,12 @@ export default function XpCard({
     hidden: { opacity: 0, y: 100 },
     show: {
       opacity: 1,
+      y: 0,
       transition: {
         delay: 0.3 * index,
         staggerChildren: 0.2,
         delayChildren: 0.3,
-        duration:1.2
+        duration: 1.2,
       },
     },
   };
