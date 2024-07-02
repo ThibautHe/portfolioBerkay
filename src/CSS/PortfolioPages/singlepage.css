@@ -189,4 +189,7 @@ screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-
   .project-problems p{
     text-align: justify;
   }
+  .project-about-title {
+    text-align: center;
+  }
 }

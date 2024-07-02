@@ -1,7 +1,27 @@
 import FontsCSS from "../CSS/fonts.module.css";
 import XpCard from "./XpCard";
+import { motion } from "framer-motion";
 
 export default function Experience() {
+  const container = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { staggerChildren: 0.5 },
+    },
+  };
+
+  const child = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+  };
+
   return (
     <div className="xp-content-container">
       <div className="xp-container">
@@ -40,14 +60,18 @@ export default function Experience() {
         in the multimedia and communication technology fields.
       </p>
 
-      <div className="xp-card-container">
+      <div
+        className="xp-card-container"
+      >
         <XpCard
+        index={1}
           imgsize="100px"
           title="Internship"
           url="/images/vc.jpg"
         ></XpCard>
-        <XpCard title="Freelance" url="/images/fiverrlogo.png"></XpCard>
+        <XpCard index={2} title="Freelance" url="/images/fiverrlogo.png"></XpCard>
         <XpCard
+        index={3}
           imgsize="200px"
           extraMargin={"20px 0 0 0"}
           active={true}
