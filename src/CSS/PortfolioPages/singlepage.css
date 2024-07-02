@@ -150,6 +150,7 @@
 .project-problems {
   padding: 0 10%;
   box-sizing: border-box;
+  color: var(--readableColor);
 }
 .project-problems h1 {
   margin: 5% 0;
