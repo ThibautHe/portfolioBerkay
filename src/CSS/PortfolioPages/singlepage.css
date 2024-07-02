@@ -148,8 +148,8 @@
 }
 
 .project-problems {
-  width: 50%;
-  margin: auto;
+  padding: 0 10%;
+  box-sizing: border-box;
 }
 .project-problems h1 {
   margin: 5% 0;
@@ -158,7 +158,7 @@
   padding-top: 6em;
 }
 
-@media screen and ((max-device-width: 768px)) and (-webkit-device-pixel-ratio: 3),
+@media screen and ((max-device-width: 768px)),
 screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
   .nextProject
   {
@@ -183,7 +183,10 @@ screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-
   .project-problems h1 {
     margin: 0 0 10% 0;
   }
-  .project-problems {
-    width: 90%;
+  .project-div p {
+    text-align: justify;
+  }
+  .project-problems p{
+    text-align: justify;
   }
 }

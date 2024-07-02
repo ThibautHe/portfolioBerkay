@@ -91,7 +91,7 @@ left: 65%;
     }
   }
   
-  @media screen and ((max-device-width: 768px)) and (-webkit-device-pixel-ratio: 3),
+  @media screen and ((max-device-width: 768px)),
   screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
     .circle {
         width: 50px;

@@ -41,7 +41,7 @@ li {
   width: 0; /*makes it so the nav can margin auto over the whole div*/
 }
 
-@media screen and ((max-device-width: 768px)) and (-webkit-device-pixel-ratio: 3) {
+@media screen and ((max-device-width: 768px)) {
   .mainheader-ul {
     display: none;
   }

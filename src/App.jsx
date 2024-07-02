@@ -22,6 +22,7 @@ import { ExtraPage } from "./ExtraPage.jsx";
 import AeSvg from "./Components/Svg/AeSvg.jsx";
 import PpSvg from "./Components/Svg/PpSvg.jsx";
 import Preloader from "./Components/preloader.jsx";
+import Experience from "./Components/Experience.jsx";
 
 const About = () => {
   const { theme, readableColor, color1, color2 } = useColorTheme();
@@ -149,7 +150,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className="education-container" style={{ backgroundColor: theme }}>
+
+      <Experience></Experience>
+
+      {/* <div className="education-container" style={{ backgroundColor: theme }}>
         <Slider
           isVertical={true}
           offsetLeft={"50%"}
@@ -187,7 +191,7 @@ const About = () => {
             <img className="education-img" src="/ehb.png" alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div
         className="softwares-container"
