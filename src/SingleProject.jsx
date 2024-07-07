@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import "./CSS/PortfolioPages/singlepage.css";
 import { useState } from "react";
 import { useColorTheme } from "./Hooks/useColorTheme.jsx";
@@ -106,6 +106,10 @@ export function SingleProject() {
       setMainImg(foundProject.img);
       setSecondaryImg(foundProject.showcaseImg);
     }
+  }, [id]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, [id]);
 
   useEffect(() => {
@@ -260,16 +264,18 @@ export function SingleProject() {
         </div>
       </section>
 
-      <section className="nextProject">
-        <video
-          className=""
-          src={nextProject.img}
-          onClick={handleNextProjectClicked}
-        ></video>
-        <h1 className={`nextProjectTitle ${FontsCSS.boldFont}`}>
-          NEXT PROJECT
-        </h1>
-      </section>
+      <Link to={`/portfolio/${nextProject.id}`}>
+        <section className="nextProject">
+          <video
+            className=""
+            src={nextProject.img}
+            onClick={handleNextProjectClicked}
+          ></video>
+          <h1 className={`nextProjectTitle ${FontsCSS.boldFont}`}>
+            NEXT PROJECT
+          </h1>
+        </section>
+      </Link>
       <Footer />
     </>
   );
